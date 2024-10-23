@@ -7,7 +7,7 @@ tags:
 top: 1
 ---
 
-# I. Estimation
+<!-- # I. Estimation
 
 ## 1. Introduction, concepts and notation
 
@@ -29,23 +29,72 @@ top: 1
 
 ### 4.1 Differentiable likelihood in the continuous case - the multivariate scenario
 
-### 4.2 An interesting example: ML estimation for capture recapture models
+### 4.2 An interesting example: ML estimation for capture recapture models -->
 
 ## 5. Statistics and estimators
+需要掌握的几个定义：Statistic、Estimate、Estimator、Distribution of an estimator（符号的定义、对统计量估计参数这一过程的描述、Unbiased estimator、MSE
+
+Remark 5.1:统计量的分布受参数值（未知 影响
+
+Remark 5.2：如何衡量估计的准确性（置信度<br>
+skill：样本量增大时，分布收敛到某个特定的分布（不依赖于未知参数，通过特定分布的性质来推断
+
+Remark 5.3：未知参数等同于随机变量，所以相等是指等号在参数任意值处都成立
+
+Remark 5.4：无偏估计并没有解决计算置信度的问题
+
+Remark 5.5：偏差-方差分解
+
+Example 5.1：一个Poisson分布无偏估计的例子，讨论了样本量对置信度的影响，提到了'asymptotic property of the estimator'
+
+tip：对无偏性、渐进无偏性的讨论参考茆书6.1.1
 
 ## 6. Probabilistic convergence
+标题下的部分实际在讨论中心极限定理
 
 ### 6.1 Two useful inequalities
-
+Markov’s inequality、Chebyshev’s inequality
 ### 6.2 Types of probabilistic convergence
+熟练掌握Convergence in quadratic mean、Convergence in probability、Convergence in distribution <br>
+注意前者可以推出后者，三个条件依次减弱<br>
+可以参考王书2.7
+
+Weak Law of Large Numbers、Central Limit Theorem是两个关于收敛的结论，很重要<br>
+可以参考茆书
+
+Example 6.3：依分布收敛的例子
+
+Continuous Mapping Theorem，Slutsky’s theorem也很重要，记住结论即可
+
+Slutsky’s theorem的注解中还提到了：均方收敛可以推出概率收敛
+
 
 ### 6.3 Probabilistic convergence and estimators
+Consistency of a sequence of estimators关于一致性的定义
 
+Remark 6.1：注意一致性是一个存在于序列上的概念
+
+（重要）Example 6.5：综合运用本节知识，一步步推导出了计算estimator置信度的方法
 ## 7. The Fisher information
+本节讨论的是‘models that are sufficiently regular’方差下界、渐进正态性
+
+需要掌握的定义有Fisher information regularity conditions、The score function、Fisher information，以及对The score function、Fisher information的直观解释
+
+几个例子是关于验证FIRC、计算The score function、Fisher information的，也是作业里的题型
+
+渐进正态性可参考韦书96页
 
 ## 8. Efficiency and the Cramer–Rao bound
+需要掌握的定义：Efficient estimator（有效估计、Cauchy–Schwarz inequality for expectations（证明中要用到
 
-## 9. Asymptotic distribution of the MLE
+最重要的内容是Cramer–Rao bound定义和证明
+
+两个例子讨论了有效估计问题
+
+7、8节内容可参考王书2.6、韦书3.5，有详细的证明
+
+
+<!-- ## 9. Asymptotic distribution of the MLE
 
 ## 10. Confidence sets around the ML estimator
 
@@ -57,7 +106,7 @@ top: 1
 
 ## 14. Likelihood ratio confidence sets: Wilks’ approach
 
-## 15. Transformation invariant confidence sets
+## 15. Transformation invariant confidence sets -->
 
 <!-- ---
 
