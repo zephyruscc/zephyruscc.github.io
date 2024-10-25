@@ -75,6 +75,8 @@ Consistency of a sequence of estimators关于一致性的定义
 Remark 6.1：注意一致性是一个存在于序列上的概念
 
 （重要）Example 6.5：综合运用本节知识，一步步推导出了计算estimator置信度的方法
+
+一致性定义可参考邵书2.5.1
 ## 7. The Fisher information
 本节讨论的是‘models that are sufficiently regular’方差下界、渐进正态性
 
@@ -93,10 +95,27 @@ Remark 6.1：注意一致性是一个存在于序列上的概念
 
 7、8节内容可参考王书2.6、韦书3.5，有详细的证明
 
+## 9. Asymptotic distribution of the MLE
+讨论了ML估计的渐进正态性，注意Theorem 9.1的条件部分
 
-<!-- ## 9. Asymptotic distribution of the MLE
+Corollay 9.1：定义asymptotically efficient
+
+Remark 9.1:进一步阐述了asymptotically efficient，给出了均方误差收敛和依分布收敛两种对asymptotically efficient的描述。<br>
+强调这种性质关注估计参数周围的variability，两种描述只是不同的刻画
+根据偏差-方差分解可以推测在渐进无偏的条件下，两种描述等价
+
+Definition 9.1：定义了regular statistical models
 
 ## 10. Confidence sets around the ML estimator
+有了统计量对参数进行估计后，如果还知道统计量的分布并且分布与待估计参数无关，那么就可以计算置信区间。<br>
+前面的章节给出了ML估计及其渐进分布，本节讨论ML估计的置信区间：
+
+Definition 10.1：给出了置信度的定义
+
+Definition 10.2：1 − α confidence interval，1 − α代表置信度，注意给定置信度下的置信区间并不唯一
+
+Definition 10.3：观测置信区间（基于样本的
+
 
 ## 11. Asymptotic approximations of CIs
 
@@ -106,7 +125,9 @@ Remark 6.1：注意一致性是一个存在于序列上的概念
 
 ## 14. Likelihood ratio confidence sets: Wilks’ approach
 
-## 15. Transformation invariant confidence sets -->
+## 15. Transformation invariant confidence sets
+
+
 
 <!-- ---
 
