@@ -118,15 +118,57 @@ Definition 10.3：观测置信区间（基于样本的
 
 
 ## 11. Asymptotic approximations of CIs
+Theorem 11.1：该定理即为中心极限定理
+
+Remark 11.1:强调通过渐进分布得到的置信区间是渐进准确的
+
+Theorem 11.2：使用slutsky替换了上一定理中的方差部分
+
+Remark 11.2：样本量越高估计越准确
 
 ## 12. Estimating the information for ML estimators
+这一节将应用ML估计的渐进正态性给出置信区间，在此之前，需要对Lemma 9.1所讲内容进行讨论，确保使用未知参数的估计量替代未知参数计算fisher信息量这一过程的准确性
+
+Therom 12.1：fisher信息量依概率收敛证明
+
+Remark 12.1：强调了CMT定理的连续性条件，要求在未知参数的邻域连续
+
+Therom 12.2：进一步的，使用估计量计算fisher信息量时也会遇到期望难以计算的问题，可以应用WLLN解决期望计算问题。当估计满足一定的条件，可以保障概率收敛性。该定理的条件与Therom 9.1类似，可以互相参考
+
+Example 12.1（对Example 6.5更精确的讨论）：一个应用渐进正态性估计置信区间的例子
+
+Remark 12.3：Observed Fisher information的定义
+
 
 ## 13. Transformations and confidence intervals
+开头有一个关于Wald approach的定义，即之前使用渐进分布求置信区间的方法
+
+讨论待估计量为未知参数的函数时，置信区间的变换<br>
+一种方法直接对参数的置信区间进行函数转化，另一种方法是使用逆函数进行重新参数化，两种方法结果都正确，但有所不同（因为置信区间不唯一）
+
+Lemma 13.1：重新参数化后，新的fisher信息量的形式（之前在讲C-R下界时也有补充过
+
+Corollary 13.1：一般化的ML估计的渐进正态性
+
+Example 13.1：一个估计正态分布均值参数的例子，对比两种方法的差异
+
+Remark 13.1：讨论了重新参数化方法的几点问题
+
 
 ## 14. Likelihood ratio confidence sets: Wilks’ approach
+本节讲了一种完全不同于之前的，新的构建置信区间方法
+Theorem 14.1（Wilks定理）：似然比函数在一定条件下依分布收敛于自由度为1的卡方分布，注意定理中的符号theta*含义为估计量，而不是真实值；theta_hat为ML估计值。因此通过这种方法可以选出似然函数最大的置信区间
+
+Corollary 14.1：具体置信区间的构造
+
+Remark 14.2：这种方法很难求解析解，但使用计算机容易求出遍历解（迭代解
+
+Proposition 14.1：一个有意思的小结论，95%置信区间内的参数值，和ML估计参数值差距在2以内
+
+这一章不太重要，但是wilks定理会在之后的似然比检验中再次出现
 
 ## 15. Transformation invariant confidence sets
-
+在chapter 13提到了重新参数化方法，这种变化应用在wald方法中会有问题，但是应用在wilks方法中时，两种置信区间完全等价，本节证明了这一点
 
 
 <!-- ---
